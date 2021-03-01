@@ -31,8 +31,9 @@ class _MyAppState extends State<MyApp> {
               child: Column(
                 children: <Widget>[
                   Flexible(
-                      flex: 4,
+                      flex: 3,
                       child: Container(
+                        width: double.infinity,
                         color: Colors.black,
                         child: Image(
                           image: AssetImage("images/rossi1.jpg"),
@@ -157,7 +158,7 @@ class _MyAppState extends State<MyApp> {
             ),
             Align(
               alignment: Alignment(0.95, -0.9),
-              child: MaterialButton(
+              child: FloatingActionButton(
                 onPressed: () {
                   setState(() {
                     if (iconColor == Colors.grey.shade800) {
@@ -167,14 +168,13 @@ class _MyAppState extends State<MyApp> {
                     }
                   });
                 },
-                color: Colors.white60,
+                backgroundColor: Colors.white60,
                 child: Icon(
                   Icons.favorite,
                   color: iconColor,
                   size: 30,
                 ),
-                padding: EdgeInsets.all(16),
-                shape: CircleBorder(),
+                // shape: CircleBorder(),
               ),
             )
           ],
