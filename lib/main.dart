@@ -29,11 +29,13 @@ class _MyAppState extends State<MyApp> {
                     colors: <Color>[Colors.white, Colors.indigo]),
               ),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Flexible(
                       flex: 3,
                       child: Container(
                         width: double.infinity,
+                        height: double.infinity,
                         color: Colors.black,
                         child: Image(
                           image: AssetImage("images/rossi1.jpg"),
@@ -43,6 +45,7 @@ class _MyAppState extends State<MyApp> {
                   Flexible(
                     flex: 2,
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         Flexible(
                           flex: 1,
@@ -124,7 +127,7 @@ class _MyAppState extends State<MyApp> {
                     child: ListView(
                       children: <Widget>[
                         Container(
-                          margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
+                          margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
                           child: RichText(
                             text: TextSpan(
                                 text:
@@ -142,7 +145,7 @@ class _MyAppState extends State<MyApp> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
+                          margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
                           child: RichText(
                             text: TextSpan(
                                 text:
