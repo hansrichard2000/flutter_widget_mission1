@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Flexible(
-                      flex: 3,
+                      flex: 2,
                       child: Container(
                         width: double.infinity,
                         height: double.infinity,
@@ -43,7 +43,7 @@ class _MyAppState extends State<MyApp> {
                         ),
                       )),
                   Flexible(
-                    flex: 2,
+                    flex: 1,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
