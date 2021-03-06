@@ -29,7 +29,6 @@ class _MyAppState extends State<MyApp> {
                     colors: <Color>[Colors.white, Colors.indigo]),
               ),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Flexible(
                       flex: 2,
@@ -56,7 +55,7 @@ class _MyAppState extends State<MyApp> {
                                     fit: BoxFit.cover,
                                     image: AssetImage("images/rossi2.jpg")),
                                 color: Colors.black,
-                                borderRadius: BorderRadius.circular(15)),
+                                borderRadius: BorderRadius.circular(10)),
                             width: 100,
                             height: 100,
                             margin: EdgeInsets.all(5),
@@ -71,7 +70,7 @@ class _MyAppState extends State<MyApp> {
                                     fit: BoxFit.cover,
                                     image: AssetImage("images/rossi3.jpg")),
                                 color: Colors.black,
-                                borderRadius: BorderRadius.circular(15)),
+                                borderRadius: BorderRadius.circular(10)),
                             width: 100,
                             height: 100,
                             margin: EdgeInsets.all(5),
@@ -86,7 +85,7 @@ class _MyAppState extends State<MyApp> {
                                     fit: BoxFit.cover,
                                     image: AssetImage("images/rossi4.jpg")),
                                 color: Colors.black,
-                                borderRadius: BorderRadius.circular(15)),
+                                borderRadius: BorderRadius.circular(10)),
                             width: 100,
                             height: 100,
                             margin: EdgeInsets.all(5),
@@ -101,7 +100,7 @@ class _MyAppState extends State<MyApp> {
                                     fit: BoxFit.cover,
                                     image: AssetImage("images/rossi5.jpg")),
                                 color: Colors.black,
-                                borderRadius: BorderRadius.circular(15)),
+                                borderRadius: BorderRadius.circular(10)),
                             width: 100,
                             height: 100,
                             margin: EdgeInsets.all(5),
@@ -111,7 +110,7 @@ class _MyAppState extends State<MyApp> {
                     ),
                   ),
                   Flexible(
-                    flex: 1,
+                    flex: 0,
                     child: Container(
                       color: Colors.amber,
                       margin: EdgeInsets.all(10),
@@ -123,9 +122,19 @@ class _MyAppState extends State<MyApp> {
                     ),
                   ),
                   Flexible(
-                    flex: 4,
+                    flex: 3,
                     child: ListView(
                       children: <Widget>[
+                        // Container(
+                        //   color: Colors.amber,
+                        //   margin: EdgeInsets.all(10),
+                        //   child: Text(
+                        //     "Valentino Rossi",
+                        //     style: TextStyle(
+                        //         fontWeight: FontWeight.bold, fontSize: 20),
+                        //     textAlign: TextAlign.center,
+                        //   ),
+                        // ),
                         Container(
                           margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
                           child: RichText(
